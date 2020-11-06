@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pneumonia Diagnoser</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		function showloading() {
+			image = document.getElementById('loading_image');
+			image.style.display = 'inline'
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="overlay"></div>
+	<div class="header">
+		<strong>QuadA<span>-</span></strong>Get an AI's opinion on Pneumonia
+	</div>
+	<div class="container">
+		<div class="title">Pneumonia Diagnoser</div>
+		<form action="/upload" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+			<div class="tip">Select Image</div>
+			<div class="upload"></div>
+			<label for="file-upload">Choose file</label>
+			<input id="file-upload" type="file" name="image">
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+</html>

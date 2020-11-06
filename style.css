@@ -1,0 +1,139 @@
+body {
+	margin: auto;
+	background: url('https://securityintelligence.com/wp-content/uploads/2018/10/si-malware-analysis-feature.jpg');
+	background-size: cover;
+	color: #fff;
+	font-family: Century Gothic;
+}
+
+.overlay {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	background: #0009;
+	z-index: -1;
+}
+
+.header {
+	background: #fd4f04;
+	height: 75px;
+	line-height: 75px;
+	width: calc(100vw - 30px);
+	padding-left: 30px;
+}
+
+.header strong {
+	font-size: 1.4em;
+}
+
+.header span {
+	margin: 0 20px;
+}
+
+.title {
+	font-size: 3em;
+	margin: 100px 50px;
+}
+
+.img {
+	border: 1px solid #fff;
+	width: 175px;
+	height: 175px;
+	display: inline-block;
+}
+
+form {
+	width: 380px;
+	margin-left: calc(50vw - 240px);
+	padding: 50px;
+	background: #000c;
+	height: 215px;
+}
+
+form input, form label {
+	display: block;
+	font-family: Century Gothic;
+	background: transparent;
+	border: 1px solid #fff;
+	height: 50px;
+	width: 200px;
+	line-height: 40px;
+	text-align: center;
+	outline: none;
+	color: #fff;
+	font-size: 1em;
+}
+
+input[type="file"] {
+	display: none;
+}
+
+form label {
+	line-height: 48px;
+	height: 48px;
+	width: 198px;
+	position: relative;
+	/*top: 150px;*/
+	left: -20px;
+}
+
+form input {
+	position: relative;
+	top: -50px;
+	left: 200px;
+}
+
+.tip {
+	position: relative;
+	top: 50px;
+	left: -15px;
+	font-size: 1.6em;
+}
+
+.upload {
+	width: 150px;
+	height: 150px;
+	border: 2px dashed #fff;
+	position: relative;
+	top: -30px;
+	left: 240px;
+}
+
+@media screen and (max-aspect-ratio: 1/1) {
+	* {
+		font-size: 1.3em;
+	}
+
+	.header {
+		height: 150px;
+		line-height: 150px;
+	}
+
+	form {
+		margin: 0;
+		width: 100vw;
+		height: 600px;
+	}
+
+	.upload {
+		width: 300px;
+		height: 300px;
+		left: calc(100vw - 450px);
+	}
+
+	form label {
+		height: 96px;
+		line-height: 96px;
+		width: 396px;
+		top: 100px;
+		left: 0;
+	}
+
+	form input {
+		height: 100px;
+		line-height: 100px;
+		width: 400px;
+		top: 0;
+		left: calc(100vw - 500px);
+	}
+}
